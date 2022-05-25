@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 import Logo from './img/logo.png';
 
@@ -16,11 +17,11 @@ function Header(){
             </label>
 
             <ul class="nav__menu">
-                <li><a href="../../index.html">INICIO</a></li>
-                <li><a href="../adopcion/adopcion.html">ADOPCIÓN</a></li>
-                <li><a href="../donacion/donacion_economica.html">DONACIÓN</a></li>
-                <li><a href="../blog/blog.html">BLOG</a></li>
-                <li><a href="../aliados/aliados.html">ALIADOS</a></li>
+                <li><Link to="/">INICIO</Link></li>
+                <li><Link to="/adopcion">ADOPCIÓN</Link></li>
+                <li><Link to="/donacion">DONACIÓN</Link></li>
+                <li><Link to="/blog">BLOG</Link></li>
+                <li><Link to="/aliados">ALIADOS</Link></li>
             </ul>
         </nav>
     </header>
